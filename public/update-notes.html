@@ -20,28 +20,34 @@
       background: #181b23;
       border: 1px solid #2a2f3a;
     }
-    h1 {
-      margin-top: 0;
-      font-size: 28px;
+    h1 { margin-top: 0; font-size: 28px; }
+    .version { color: #8ab4ff; margin-bottom: 24px; }
+    .tag {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 8px;
     }
-    .version {
-      color: #8ab4ff;
-      margin-bottom: 24px;
-    }
-    li {
-      margin-bottom: 10px;
-      line-height: 1.7;
-    }
+    .fix { background: #2a1f1f; color: #f87171; }
+    .new { background: #1a2a1f; color: #4ade80; }
+    .improve { background: #1a1f2a; color: #60a5fa; }
+    li { margin-bottom: 12px; line-height: 1.7; }
+    ul { padding-left: 0; list-style: none; }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Drowm AI Launcher 更新说明</h1>
-    <div class="version">当前版本：v1.0.0</div>
+    <div class="version">当前版本：v2.1.0 &nbsp;·&nbsp; 2026-05-25</div>
     <ul>
-      <li>初始化启动器自动更新配置。</li>
-      <li>新增远程版本检测文件。</li>
-      <li>后续将支持启动器内弹窗提示更新。</li>
+      <li><span class="tag fix">修复</span>兑换码积分写入失败问题（point_logs 类型约束补充 redeem 类型）</li>
+      <li><span class="tag fix">修复</span>AI 图像生成后无法下载的问题（改用主进程 net 模块下载，绕开 CORS 限制）</li>
+      <li><span class="tag fix">修复</span>图生图超时问题：支持将已生成图作为参考图，自动降级不支持的尺寸参数</li>
+      <li><span class="tag new">新增</span>GPT Image 2 完整尺寸选项：1024、2K 正方形/横向/纵向、4K 横向/纵向、自动</li>
+      <li><span class="tag new">新增</span>图像节点新增下载按钮，生成状态合并至耗时行显示，移除底部状态矩形</li>
+      <li><span class="tag improve">优化</span>图像 API Key 统一由后台 app_config 远程配置管理，无需重新发布即可更换</li>
     </ul>
   </div>
 </body>

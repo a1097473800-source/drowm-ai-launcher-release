@@ -3,7 +3,7 @@
   "name": "v2.1.0",
   "force": false,
   "url": "https://github.com/a1097473800-source/drowm-ai-launcher-release/releases/download/v2.1.0/DROWM-AI-Launcher-Setup-v2.1.0.exe",
-  "notes": "更新创意工坊节点系统，优化 AI 图像生成、个人中心、积分系统与界面体验。",
-  "published_at": "2026-05-23",
+  "notes": "修复兑换码积分类型约束问题；修复 AI 图像生成下载功能；新增 GPT Image 2 全尺寸选项（含 2K/4K）；图生图支持已生成图作为参考图；优化下载流程改为 URL 直链模式。",
+  "published_at": "2026-05-25",
   "min_supported_version": "2.0.0"
 }
