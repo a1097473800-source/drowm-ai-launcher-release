@@ -1,0 +1,9 @@
+{
+  "channel": "vip",
+  "version": "3.2.2",
+  "url": "https://github.com/a1097473800-source/drowm-ai-launcher-release/releases/download/vip-v3.2.2/DROWM-AI-VIP-Setup-v3.2.2.exe",
+  "notes": "更新内置 Krita 一键安装程序，使用新提供的 Windows x64 安装包。\n\n- 恢复侧栏「退出登录」，退出成功后返回本地首页；网络失败时保留账号以便重试。\n- 移除重复的「账号设置」，保留 Mori 个人中心与积分入口。\n- 接入独立的 VIP 更新通道，维护页显示真实版本并提供新版下载地址。\n- 保留黑紫界面、完整 Mori 画布和已验证的下载续传与依赖修复功能。\n\n更新方式：下载安装包，关闭旧启动器后覆盖安装。本地配置和 Mori 登录会话保留。\n",
+  "publishedAt": "2026-11-16T16:56:45Z",
+  "sha256": "d180205264afeb8826d41316b5bfa7eed3b684ff0028919f7bb7b50b3d39a712",
+  "size": 710012191
+}
